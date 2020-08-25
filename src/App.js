@@ -8,8 +8,8 @@ class App extends React.Component{
 		data: {}
 	}
 	async componentDidMount(){
-		const data = await fetchData();
-		
+		const {data} = await fetchData();
+		console.log(data);
 		this.setState({data:data})
 	}
 	render(){
