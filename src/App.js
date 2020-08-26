@@ -9,7 +9,6 @@ class App extends React.Component{
 	}
 	async componentDidMount(){
 		const {data} = await fetchData();
-		console.log(data);
 		this.setState({data:data})
 	}
 	render(){
@@ -17,7 +16,7 @@ class App extends React.Component{
 			<div className={styles.container}>
 				<Cards data={this.state.data}/>
 				<Chart />
-				<CountryPicker />
+				{/* <CountryPicker /> */}
 			</div>
 			)
 	}
