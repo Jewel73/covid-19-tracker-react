@@ -6,7 +6,7 @@ import cx from 'classnames'
 import {Card, CardContent, Grid, Typography } from '@material-ui/core'
 // {confirmed, recovered, deaths, lastUpdate}
 const Cards = ({ data: { confirmed, recovered, deaths, lastUpdate }})=>{
-    console.log(confirmed);
+    // console.log(confirmed);
     
     if(!confirmed){
         return "LOADING................."
@@ -18,7 +18,7 @@ const Cards = ({ data: { confirmed, recovered, deaths, lastUpdate }})=>{
             <Grid container spacing={3} justify="center">
                 <Grid item componet={Card} xs={12} md={3} className={cx(styles.card, styles.infected)}>
                     <CardContent>
-                        <Typography color="textSecondary">Infected</Typography>
+                        <Typography  color="textSecondary">Infected</Typography>
                         <Typography variant="h5"> 
                             <CountUp
                                 start={0}
@@ -28,7 +28,7 @@ const Cards = ({ data: { confirmed, recovered, deaths, lastUpdate }})=>{
                             />
                         </Typography>
                         <Typography color="textSecondary" gutterBottom>{new Date(lastUpdate).toDateString()}</Typography>
-                        <Typography variant="body2">Number Of Active Cases Of Covid 19</Typography>
+                        <Typography variant="body2">Active Cases Of Covid 19</Typography>
                     </CardContent>
                 </Grid>
 
@@ -44,7 +44,7 @@ const Cards = ({ data: { confirmed, recovered, deaths, lastUpdate }})=>{
                             />
                          </Typography>
                         <Typography color="textSecondary" gutterBottom>{new Date(lastUpdate).toDateString()}</Typography>
-                        <Typography variant="body2">Number Of recoverd Cases Of Covid 19</Typography>
+                        <Typography variant="body2">Recoverd Cases Of Covid 19</Typography>
                     </CardContent>
                 </Grid>
 
@@ -60,7 +60,7 @@ const Cards = ({ data: { confirmed, recovered, deaths, lastUpdate }})=>{
                             />
                         </Typography>
                         <Typography color="textSecondary" gutterBottom>{new Date(lastUpdate).toDateString()}</Typography>
-                        <Typography variant="body2">Number Of Death Cases Of Covid 19</Typography>
+                        <Typography variant="body2">Death Cases Of Covid 19</Typography>
                     </CardContent>
                 </Grid>
             </Grid>

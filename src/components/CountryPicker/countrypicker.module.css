@@ -1,1 +1,18 @@
-countrypicker.module.css
+.formControl{
+    width: 70% !important;
+    margin-bottom: 30px !important;
+    align-items: center !important;
+
+}
+
+.option{
+    align-items: center !important;
+}
+
+.others {
+    color:red;
+    
+}
+.fullOption{
+    background-color: darkgrey;
+}
