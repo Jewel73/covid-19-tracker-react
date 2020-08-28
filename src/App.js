@@ -1,7 +1,7 @@
 import React  from 'react'
 import styles from './App.module.css'
 import {Chart , Cards , CountryPicker,Creator} from './components'
-import {fetchData, fetchCountry } from './api/Api'
+import {fetchData } from './api/Api'
 
 class App extends React.Component{
 	state ={

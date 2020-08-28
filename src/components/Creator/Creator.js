@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from './creator.module.css'
-import {Grid, Card, CardContent, Typography} from '@material-ui/core'
+import { CardContent, Typography} from '@material-ui/core'
 import Avatar from '@material-ui/core/Avatar'
 import imageCreator from './jewel.jpg'
 const Creator = ()=>{
